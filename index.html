@@ -1,0 +1,55 @@
+<style>
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(72, 187, 120, 0.6);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 14px rgba(72, 187, 120, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(72, 187, 120, 0);
+  }
+}
+
+.button-base {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 15px;
+}
+
+.button-base:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.pulse-button {
+  background: linear-gradient(135deg, #43A047, #66BB6A);
+  color: white;
+  animation: pulse 2.5s infinite;
+}
+
+.link-button {
+  background: linear-gradient(135deg, #1E88E5, #42A5F5);
+  color: white;
+}
+</style>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScUcrY0I5BHIze1AQRYGHEiMu2KGnQ-Ee9grEpUOdfloha2yg/viewform" target="_blank">
+  <button class="button-base pulse-button">Solicitar Certificado</button>
+</a>
+
+<a href="https://docs.google.com/spreadsheets/d/17ipjDSwuiUidI0WxIQ5Wx7h_1NS-7aSm5CJn9cSU3cI/edit#gid=572206268&range=A1" target="_blank">
+  <button class="button-base link-button">Acompanhar Solicitação</button>
+</a>
